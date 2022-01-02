@@ -17,6 +17,7 @@ img {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    font-family: "Cormorant Garamond", serif;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -45,6 +46,7 @@ img {
 /* ----------Links---------- */
 a {
   text-decoration: none;
+  color: #000;
 }
 .links {
   padding: 0;
@@ -53,6 +55,7 @@ a {
   gap: 30px;
   font-size: 1.2rem;
   padding-right: 50px;
+  color: #000;
 }
 /*-------------first section------*/
 #first_section {
@@ -70,7 +73,7 @@ a {
 h2 {
   text-align: center;
   font-size: 3rem;
-  font-family: minion;
+  font-family: "Cormorant Garamond", serif;
   font-style: italic;
   margin-left: auto;
   margin-right: auto;
@@ -134,11 +137,12 @@ h2 {
 footer {
   display: flex;
   margin-left: 10%;
+  font-family: "Cormorant Garamond", serif;
 }
 /*----------- mobil version------*/
 @media (max-width: 600px) {
   h2 {
-    display: none;
+    font-size: 10px;
   }
 
   #overskrift {
