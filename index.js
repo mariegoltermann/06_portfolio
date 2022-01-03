@@ -28,3 +28,14 @@ function toggleMenu() {
 
 /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
 btn.addEventListener("click", toggleMenu);
+
+//-------------------------------------------------------tilbage til projekter-------------------------------------------------------//
+function info() {
+  console.log("tilbageTilProjekter");
+  //vis infoskærm
+  document.querySelector("#tilbage_projekter").classList.remove("hide");
+  //klik - luk infoskærm ned - tilabage på startskærm
+  document
+    .querySelector("#tilbage_projekter")
+    .addEventListener("click", sidenVises);
+}

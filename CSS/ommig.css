@@ -6,7 +6,7 @@ img {
   width: 100%;
 }
 
-/* menu */
+/*=================== menu ==================*/
 @media (min-width: 600px) {
   html {
     scroll-behavior: smooth;
@@ -43,7 +43,7 @@ img {
   }
 }
 
-/* ----------Links---------- */
+/* ------------------ Links ----------------*/
 a {
   text-decoration: none;
   color: #000;
@@ -57,7 +57,30 @@ a {
   padding-right: 50px;
   color: #000;
 }
-/*---------Burgermenu---------*/
+/*====================first section===================*/
+main {
+  margin: 10%;
+}
+#first_section {
+  padding-top: 10%;
+}
+
+h2 {
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+.div1 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.migimg {
+  margin-top: 10%;
+  width: 100%;
+}
+/*=================== Burgermenu ================*/
 .toggle-btn {
   display: none;
 }
@@ -72,6 +95,7 @@ a {
     cursor: pointer;
     font-size: 1rem;
     padding-right: 2.8rem;
+    font-family: "Cormorant Garamond", serif;
   }
 
   nav {
@@ -92,54 +116,49 @@ a {
   }
 }
 
-/*----------- mobil version------*/
-@media (max-width: 600px) {
-  #first_section {
-    display: grid;
-    padding-top: 10px;
-  }
-
-  .div1 {
-  }
-  .migimg {
-  }
-  footer {
-    font-size: 10px;
-  }
-}
-/*-------------first section------*/
-#first_section {
-  padding-top: 10%;
-}
-#first_section .section_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-}
-
-h2 {
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-.div1 {
-  font-family: "Cormorant Garamond", serif;
-  grid-column: 3;
-}
-
-.migimg {
-  grid-column: 2;
-  grid-row: 1;
-  width: 60%;
-}
-
 /*-------- footer -------------*/
 footer {
   display: flex;
-  margin-left: 10%;
-  padding-top: 7%;
+  margin: 5%;
   font-family: "Cormorant Garamond", serif;
+}
+
+/*=========================================== website version ===================================*/
+@media (min-width: 600px) {
+  /*-------------first section------*/
+  main {
+    margin: unset;
+  }
+  #first_section {
+    padding-top: 10%;
+  }
+  #first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  .div1 {
+    font-family: "Cormorant Garamond", serif;
+    grid-column: 3;
+  }
+
+  .migimg {
+    grid-column: 2;
+    grid-row: 1;
+    width: 60%;
+  }
+  /*-------- footer -------------*/
+  footer {
+    margin-left: 10%;
+    font-family: "Cormorant Garamond", serif;
+  }
 }
