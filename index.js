@@ -30,12 +30,10 @@ function toggleMenu() {
 btn.addEventListener("click", toggleMenu);
 
 //-------------------------------------------------------tilbage til projekter-------------------------------------------------------//
-function info() {
-  console.log("tilbageTilProjekter");
-  //vis infoskærm
-  document.querySelector("#tilbage_projekter").classList.remove("hide");
-  //klik - luk infoskærm ned - tilabage på startskærm
-  document
-    .querySelector("#tilbage_projekter")
-    .addEventListener("click", sidenVises);
+const btn1 = document.querySelector("#tilbagepil");
+
+function tilbage() {
+  window.location.href = "projekter.html";
 }
+
+btn1.addEventListener("click", tilbage);
