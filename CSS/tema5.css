@@ -12,6 +12,8 @@ hr{
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 10%;
+    border: 0;
+  border-top: 1px solid black;
   }
 /* ===================menu ===========================*/
 @media (min-width: 600px) {
@@ -102,6 +104,27 @@ li{
     flex-flow: column;
   }
 }
+/*---------tilbage til toppen-----------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 40px;
+  font-size: 10px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+#myBtn:hover {
+  background-color: grey;
+}
 /*-------- footer -------------*/
 footer {
   display: flex;
@@ -120,6 +143,11 @@ main {
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
 }
+/*================= fifth section ================*/
+ .seprojekter {
+  padding-top: 10px;
+  width: 30%;
+}
 /*==================font og skrift===============*/
 #first_section h2 {
   font-size: 1.7rem;
@@ -129,7 +157,6 @@ main {
 #first_section h4 {
   font-size: 1rem;
   font-family: "Cormorant Garamond", serif;
-  padding-bottom: 5%;
 }
 
 h3 {
@@ -174,37 +201,41 @@ p {
   div {
     padding-bottom: none;
   }
-  hr{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 10%;
+  hr {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 8%;
+    margin-bottom: 8%;
   }
   /*================= first section ================*/
   #first_section {
     display: grid;
     grid-template-columns: 1fr 0.5fr 2fr;
     grid-template-rows: 1fr;
+    align-items: center;
   }
   #first_section .p1 {
     grid-column: 3/4;
     width: 75%;
     grid-row: 1;
   }
-  #first_section .firsth {
-    grid-column: 1/2;
-    text-align: center;
-    grid-row: 1;
-    padding-top: 50%;
-    position: relative;
-    animation: mymove 3s;
+ .slide-in-left {
+    /* hører til safari og typisk iphone og ipad*/
+    -webkit-animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    /* til alle andre browsere*/
+    animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
-
-  @keyframes mymove {
-    from {
-      left: -200px;
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-500px);
+      transform: translateX(-500px);
+      opacity: 0;
     }
-    to {
-      left: 2px;
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 
@@ -288,5 +319,25 @@ p {
   .seprojekter {
     padding-top: 10px;
     width: 170px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  #myBtn:hover {
+    background-color: grey; 
   }
 }

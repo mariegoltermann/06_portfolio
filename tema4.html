@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="forsidebilleder/favicon.svg" />
     <link rel="stylesheet" href="CSS/tema4.css" />
-    <title>Hjem</title>
+    <title>mgoltermann.com</title>
   </head>
   <header>
     <div class="logooverskrift">
@@ -36,8 +37,9 @@
       <img src="tema_2/Artboard8.png" alt="pil" />
     </div>
     <main>
+      <button onclick="topFunction()" id="myBtn" title="Gå til top">↑</button>
       <section id="first_section">
-        <div class="firsth">
+        <div class="firsth slide-in-left">
           <h2>Tema 4 - Animation</h2>
           <h4>04.05.03 Temaopgave</h4>
         </div>
@@ -45,7 +47,7 @@
           <img src="tema_4/cirkeltema4.svg" alt="seconoverstbillede" />
         </div>
       </section>
-<hr>
+      <hr />
       <section id="second_section">
         <div class="section_tekst">
           <h4>1. fase</h4>
@@ -68,7 +70,7 @@
             øjnene på forbrugeren.<br />
           </p>
           <h6>- Adobe Illustrator -</h6>
-          <h5>Opgaver</h5>
+          <h5>Se opgaver</h5>
           <ul>
             <li>
               <a
@@ -100,7 +102,7 @@
           <img src="tema_4/fase1skitse.png" alt="skitse" />
         </div>
       </section>
-<hr>
+      <hr />
       <section id="third_section">
         <div class="section_tekst">
           <h4>2. fase</h4>
@@ -137,7 +139,7 @@
             derefter et <b>state machine diagram</b>.<br />
           </p>
           <h6>- Adobe XD - HTML -</h6>
-          <h5>Opgaver</h5>
+          <h5>Se opgaver</h5>
           <ul>
             <li>
               <a
@@ -168,22 +170,37 @@
           <img src="tema_4/fase2statemachine.png" alt="statemachine" />
         </div>
       </section>
-<hr>
+      <hr />
       <section id="fourth_section">
         <div class="section_tekst">
           <h4>3. fase</h4>
           <h3>IMPLEMENTERING</h3>
           <p>
-            Den sidste fase var <b>implementering</b>. Her blev vi introdukseret
-            til <b>javascript</b>, herunder funktioner, metoder
-            (addClass/removeClass), variabler, events (load, click,
-            animationend), betingelser (if-else) og math.random. <br />
+            Den sidste fase var <b>implementering</b>. Her blev vi introduseret
+            til <b>javascript</b>, som er et kodesprog der bruges til
+            interaktive brugergrænseflader.<br />
+            <br />I denne opgave anvendte vi javascript sammen med
+            <b>CSS-animationer</b>. Et spil der går ud på at klikke på gode og
+            dårlige elementer. Hvor man herefter kan miste et liv, få point
+            eller tabe ved at tiden løber ud. Her lærte jeg at lave animationer
+            i CSS ved hjælp af <b>keyframes</b>. Når man skal gøre elementer
+            klikbare, loade siden, fjerne og tilføje classes og undersøge om
+            animationerne gør som man har skrevet, bruger vi javascript. For at
+            vælge en CSS-selector lærte jeg at bruge
+            <b>"document.quaryselector("#selector")</b>. Efter kunne man enten
+            fjerne eller tilføje en class ved hjælp af
+            <b>".classList.add("class_name")</b> eller
+            <b>".classList.remove("class_name")</b>.<br />
+            <br />For at gøre det muligt at klikke på mine spilelementer, skulle
+            jeg tilføje <b>".addEventListner("click",functionName);"</b> med
+            samme navn som jeg brugte i EventListneren. Når der klikkes er det
+            dette element vi kalder på.
 
             <br />Som afslutning udarbejde jeg en kvalitativ survey i
             forbindelse med digital fernisering. <br />
           </p>
           <h6>- javascript - HTML- CSS -</h6>
-          <h5>Opgaver</h5>
+          <h5>Se opgaver</h5>
           <ul>
             <li>
               <a
@@ -207,15 +224,18 @@
           <img src="tema_4/fase3survey.png" alt="survey" />
         </div>
       </section>
-<hr>
+      <hr />
       <section id="fifth_section">
         <div>
           <h3>Færdige produkt</h3>
           <h6>- HTML - CSS - javascript - adobe illustrator -</h6>
         </div>
         <img src="tema_4/temaopgave.png" alt="færdigeprodukt" />
-        <a class="seprojekter" href="https://mgoltermann.dk/kea/04_animation/spil/index.html"
-          ><img src="forsidebilleder/seprojekter.svg" alt="seprojekter"
+        <a href="https://mgoltermann.dk/kea/04_animation/spil/index.html"
+          ><img
+            class="seprojekter"
+            src="forsidebilleder/seprojekter.svg"
+            alt="seprojekter"
         /></a>
       </section>
     </main>
