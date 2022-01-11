@@ -197,9 +197,6 @@ p {
   p {
     font-family: "Cormorant Garamond", serif;
   }
-  div {
-    padding-bottom: none;
-  }
   hr {
     margin-left: 40%;
     margin-right: 40%;
@@ -225,6 +222,7 @@ p {
     /* til alle andre browsere*/
     animation: slide-in-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
+
   @-webkit-keyframes slide-in-left {
     0% {
       -webkit-transform: translateX(-500px);
